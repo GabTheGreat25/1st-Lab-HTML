@@ -39,6 +39,15 @@
   grid-template-columns: 20rem auto;
 }
 
+@media (max-width: 1068px) {
+  .child {
+    display: inline;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
 .sidebar {
   background-color: yellow;
 }
@@ -46,7 +55,7 @@
 .content {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-auto-flow: column;
   padding: 1rem;
@@ -146,4 +155,9 @@ strong {
   -moz-transform: scale(1.075);
   -ms-transform: scale(1.075);
   -o-transform: scale(1.075);
+}
+
+.pic {
+  width: 15rem;
+  cursor: pointer;
 }
